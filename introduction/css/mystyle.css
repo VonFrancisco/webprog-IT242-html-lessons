@@ -1,11 +1,8 @@
 body {
-  background-color: rgb(173, 216, 230);
+  background-color: lightblue;
 }
 
 h1 {
-  color: rgb(0, 0, 128);
+  color: navy;
   margin-left: 20px;
 }
-
-
-
