@@ -10,7 +10,6 @@ body {
   color: white;
 }
 
-/* ===== CSS GRID LAYOUT ===== */
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -20,7 +19,6 @@ body {
     "footer";
 }
 
-/* ===== HEADER ===== */
 .header {
   grid-area: header;
   text-align: center;
@@ -28,7 +26,6 @@ body {
   background: linear-gradient(to right, #1f1f1f, #121212);
 }
 
-/* ===== NAV (FLEXBOX) ===== */
 .menu {
   grid-area: menu;
   background-color: #1a1a1a;
@@ -57,7 +54,6 @@ body {
   background-color: #0d6efd;
 }
 
-/* ===== MAIN ===== */
 .content {
   grid-area: main;
   max-width: 1000px;
@@ -74,7 +70,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* ===== FLEXBOX CARDS ===== */
+
 .card-container {
   display: flex;
   gap: 15px;
@@ -89,7 +85,6 @@ body {
   text-align: center;
 }
 
-/* ===== FOOTER ===== */
 .footer {
   grid-area: footer;
   background-color: #1a1a1a;
@@ -98,7 +93,6 @@ body {
   color: #aaa;
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
 @media (min-width: 768px) {
   .grid-container {
     grid-template-areas:
