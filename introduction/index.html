@@ -4,65 +4,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Von Cristan C. Francisco | Personal Profile</title>
+
+  <!-- Bootstrap 5 (Bare Template) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/rwd.css">
 </head>
 <body>
 
-<header class="header">
-  <h1>Von Cristan C. Francisco</h1>
-  <p>BS Information Technology – Mobile & Internet Technology</p>
-</header>
+<div class="grid-container">
 
-<nav class="menu">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#hobbies">Hobbies</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="resources.html">Resources</a></li>
-  </ul>
-</nav>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Von Cristan C. Francisco</h1>
+    <p>BS Information Technology – Mobile & Internet Technology</p>
+    <a href="#about" class="btn btn-primary mt-2">View Profile</a>
+  </header>
 
-<main class="content">
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am an IT student currently studying Mobile and Internet Technology.
-      I enjoy learning web development and improving my technical skills.
-    </p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>High School: Malate Catholic School</li>
-      <li>College: Asia Pacific College</li>
-      <li>Course: BS Information Technology</li>
+  <!-- NAV (Flexbox) -->
+  <nav class="menu">
+    <ul class="nav-list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="resources.html">Resources</a></li>
     </ul>
-  </section>
+  </nav>
 
-  <section id="hobbies">
-    <h2>Hobbies & Interests</h2>
-    <ul>
-      <li>Gaming</li>
-      <li>Reading</li>
-      <li>Exploring new technologies</li>
-    </ul>
-  </section>
+  <!-- MAIN CONTENT -->
+  <main class="content">
 
-  <section id="gallery" class="gallery">
-    <h2>Photo Gallery</h2>
-    <img src="https://media1.tenor.com/m/hM7hZLP8hwgAAAAd/cooked-dog-meme.gif"
-         alt="Funny meme">
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am an IT student studying Mobile and Internet Technology.
+        I enjoy learning web development and building responsive websites.
+      </p>
+    </section>
 
-</main>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Malate Catholic School (High School)</li>
+        <li>Asia Pacific College</li>
+        <li>BS Information Technology</li>
+      </ul>
+    </section>
 
-<footer class="footer">
-  <p>© 2026 Von Cristan C. Francisco | WEBPROG IT242</p>
-</footer>
+    <!-- FLEXBOX CARDS -->
+    <section id="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <div class="card-container">
+        <div class="card-box">Gaming</div>
+        <div class="card-box">Reading</div>
+        <div class="card-box">Web Design</div>
+      </div>
+    </section>
 
+    <section id="gallery">
+      <h2>Photo Gallery</h2>
+      <img src="https://media1.tenor.com/m/hM7hZLP8hwgAAAAd/cooked-dog-meme.gif"
+           alt="Gallery Image"
+           class="img-fluid rounded">
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Von Cristan C. Francisco | WEBPROG IT242</p>
+  </footer>
+
+</div>
+
+<!-- JavaScript (DOM + Bootstrap) -->
 <script>
   // Smooth scrolling
   document.querySelectorAll("a[href^='#']").forEach(link => {
@@ -73,6 +90,8 @@
     });
   });
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
