@@ -108,3 +108,19 @@ body {
     grid-template-columns: 250px 1fr;
   }
 }
+
+.hobby-box {
+  display: flex;
+  gap: 10px;
+}
+
+.hobby-box div {
+  background: #33b5e5;
+  padding: 10px;
+  color: white;
+}
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+}
