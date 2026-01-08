@@ -1,33 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="mystyle.css">
-<title>WEBPROG IT242 Introductions Von Cristan C. Francisco</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Von Cristan C. Francisco | Personal Profile</title>
+  <link rel="stylesheet" href="css/rwd.css">
 </head>
 <body>
- 
-<h1>Personal Profile Web page </h1>
-<p>
- 
-About Me<br>
-( Do not include birthdate / age / contact information)<br>
-Education / Achievements<br>
- High School: Malate Catholic School<br>
-Course <br>
- BS Information Technology - Mobile and Internet Technology APC<br>
-IT Experience<br>
-Hobbies & Interests<br>
- I like to:<br>
-  -Gaming<br>
-  -Bing Chilling<br>
-  -Reading<br>
-Goals In Life / Dream<br>
- I want to graduate at work to explore hobbies more.<br>
-Picture Gallery<br>
- <img src="https://media1.tenor.com/m/hM7hZLP8hwgAAAAd/cooked-dog-meme.gif" alt="Cooked Dog" width="500" height="600">
-</p>
- 
-  
+
+<header class="header">
+  <h1>Von Cristan C. Francisco</h1>
+  <p>BS Information Technology – Mobile & Internet Technology</p>
+</header>
+
+<nav class="menu">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="resources.html">Resources</a></li>
+  </ul>
+</nav>
+
+<main class="content">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am an IT student currently studying Mobile and Internet Technology.
+      I enjoy learning web development and improving my technical skills.
+    </p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>High School: Malate Catholic School</li>
+      <li>College: Asia Pacific College</li>
+      <li>Course: BS Information Technology</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul>
+      <li>Gaming</li>
+      <li>Reading</li>
+      <li>Exploring new technologies</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <img src="https://media1.tenor.com/m/hM7hZLP8hwgAAAAd/cooked-dog-meme.gif"
+         alt="Funny meme">
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Von Cristan C. Francisco | WEBPROG IT242</p>
+</footer>
+
+<script>
+  // Smooth scrolling
+  document.querySelectorAll("a[href^='#']").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
+    });
+  });
+</script>
+
 </body>
 </html>
- 
