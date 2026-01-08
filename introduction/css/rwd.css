@@ -8,7 +8,6 @@ body {
   margin: 0;
 }
 
-/* ===== Mobile First ===== */
 .grid-container {
   display: grid;
   grid-template-areas:
@@ -91,7 +90,7 @@ body {
   padding: 15px;
 }
 
-/* ===== Tablet ===== */
+
 @media (min-width: 600px) {
   .grid-container {
     grid-template-areas:
@@ -102,7 +101,6 @@ body {
   }
 }
 
-/* ===== Desktop ===== */
 @media (min-width: 768px) {
   .grid-container {
     grid-template-areas:
@@ -110,4 +108,26 @@ body {
       "menu main main main main facts"
       "footer footer footer footer footer footer";
   }
+}
+
+.hobby-box {
+  display: flex;
+  gap: 10px;
+}
+
+.hobby-box div {
+  background: #33b5e5;
+  padding: 10px;
+  color: white;
+}
+
+.hobby-box {
+  display: flex;
+  gap: 10px;
+}
+
+.hobby-box div {
+  background: #33b5e5;
+  padding: 10px;
+  color: white;
 }
